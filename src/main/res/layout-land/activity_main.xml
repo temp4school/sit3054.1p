@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/workoutHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Chronometer
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+      android:id="@+id/start_btn"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="170dp"
+      android:layout_marginEnd="200dp"
+      android:scaleType="fitXY"
+      android:src="@drawable/a2"
+      android:onClick="startTimer"
+      android:text="@string/start"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+      android:id="@+id/pause_btn"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_marginStart="100dp"
+      android:layout_marginTop="170dp"
+      android:layout_marginEnd="100dp"
+      android:onClick="pausedTimer"
+      android:scaleType="fitXY"
+      android:src="@drawable/a1"
+      android:text="@string/pause"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+      android:id="@+id/stop_btn"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_marginStart="200dp"
+      android:layout_marginTop="170dp"
+      android:layout_marginEnd="10dp"
+      android:onClick="stopTimer"
+      android:scaleType="fitXY"
+      android:src="@drawable/a3"
+      android:text="@string/stop"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/workout_type_dialog"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="290dp"
+      android:layout_marginEnd="200dp"
+      android:text="@string/workout_type_dialog"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+      android:id="@+id/workout_type_input"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="200dp"
+      android:layout_marginTop="290dp"
+      android:layout_marginEnd="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

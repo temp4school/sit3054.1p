@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SIT305Task4.1P</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="workout_type_dialog">Enter your workout type:</string>
+</resources>
